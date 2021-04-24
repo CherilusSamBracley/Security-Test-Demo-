@@ -1,0 +1,53 @@
+#include<stdio.h>
+
+
+int main(){
+
+//cherilus Sam bracley 
+//GMAIL:cherilussambracley@gmail.com
+//Instagram:tech5_09
+
+int user_data;
+int PIN=456;
+
+printf("Insert the PIN code in the orther to acces to the system \n");
+
+scanf("%d", &user_data);
+
+
+if(user_data == PIN){
+printf("CORRECT \n");
+
+}
+
+
+
+else{
+int background_action;
+int counter=0;
+
+while(3>counter){
+printf("Try again WRONG PIN value \n");
+scanf("%d", &background_action);
+
+
+if(background_action == PIN){
+printf("CORRECT \n ");
+break;
+}
+
+
+
+
+
+counter = counter+1;
+printf("ACCES DENIED\n SYSTEM DON'T RESPOND \n");
+}
+
+}
+
+
+
+
+return 0;
+}
